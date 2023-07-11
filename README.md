@@ -5,7 +5,7 @@ MacBook Desktop Clone (Frontend)
 This is a React project that clones the look and feel of a MacBook desktop. It only includes the frontend code, and does not include any backend functionality.
 
 
-DEMO- https://mac-deskstop-lqze-ridw7gwuv-honey25609.vercel.app/
+DEMO- [https://mac-deskstop-lqze-ridw7gwuv-honey25609.vercel.app/](https://mac-deskstop-lqze-wp01ahpe3-honey25609.vercel.app/)
 
 ![Image 11-07-23 at 7 31 PM](https://github.com/Honey25609/Mac-deskstop/assets/117421735/9aa9395d-9678-44ca-9b30-94ca6386c6c9)
 
