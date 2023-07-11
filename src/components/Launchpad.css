@@ -1,0 +1,78 @@
+  
+.app{
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    backdrop-filter: blur(60px);
+}
+.app::before{
+    content: ' ';
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(10px);
+   opacity: 0.2;
+    height: 100vh;
+}
+input{
+    backdrop-filter: blur(10px);
+    background: transparent;
+    border: 0.1px solid rgb(157, 142, 156) ;
+    border-radius: 0.5rem;
+    top: 2%;
+    position: relative;
+    color:white ;
+    height: 25px;
+    width: 200px;
+}
+input::placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app img{
+    margin: 2px;
+    position: relative;
+    top: 10%;
+}
+.applestore,.setting,.msg,.con,.pin,.music,.face,
+.photos,.imovie,.clock,.safari,.pages,.twitter,.books,
+.podcast,.whatsapp,.insta,.findmy,.shortcut,.procreate,.prime,
+.appletv,.band,.linkedin,.github,.calculator,.notes,.lightroom,
+.spotify,.figma,.game,.discord,.stock,.vscode,.disney
+{
+    height: 70px;
+    width: 70px;
+}
+.pin,.photos,.imovie,.clock,.safari,.pages,.twitter,.books,
+.podcast,.findmy,.insta,.prime
+,.appletv,.lightroom,.linkedin,.calculator
+,.game,.discord,.stock,.vscode,.disney
+{
+    border-radius: 0.9rem;
+}
+.column{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 3%;
+    gap: 90px;
+}
+a{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    top: 40%;
+    color: white;
+}
+.launchpad{
+    opacity: 1;
+    animation: animate 0.3s ease-in-out;
+}
+@keyframes animate {
+    from{
+        opacity: 0;
+    }
+}

@@ -1,0 +1,131 @@
+.dock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+   padding: 3px;
+   position: fixed;
+   isolation: isolate;
+   width: 520px;
+   margin: 0 auto; 
+   bottom: 20px;
+   left: 0;
+   right: 0;
+   z-index: 1;
+  
+  }
+  
+  
+     
+  .dock ::after{
+    content: ' ';
+  
+    border-radius: 0.6rem;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    filter: blur(100%);
+    opacity: 15%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .apps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .apps a {
+    flex: 1;
+  }
+  .apps img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .dock a{
+    word-spacing: 1px;
+    padding:  5px;
+    margin: 1px;
+  }
+  .store{
+    height: 33px;
+    width: 33px;
+    padding: 2px;
+  }
+  .sett{
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+    padding-right: 10px;
+    border-right:1px white solid ;
+  }
+  .facetime{
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+  }
+  .contact{
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+  }
+  .imsg{
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+  }
+  .applemusic{
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+  }
+  .pinterest{
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+    border-radius: 0.7rem;
+  }
+  .launchpa{
+    background-color: rgb(174, 174, 174);
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+    border-radius: 0.4rem;
+  }
+  .finder{
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+    border-radius: 0.4rem;
+  }
+  .bin{
+    height: 35px;
+    width: 35px;
+    padding: 2px 5px 2px 5px;
+    margin-left: 5px;
+  }
+  
+  .icon{
+    position: fixed;
+    isolation: isolate;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .d{
+    backdrop-filter: blur(200px);
+    border-radius: 0.5rem;
+    background-color: rgb(90, 90, 90);
+   
+  }
+  

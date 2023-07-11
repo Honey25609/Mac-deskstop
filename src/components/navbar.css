@@ -1,0 +1,732 @@
+body{
+    background-color: rgb(244, 244, 244);
+    cursor: default;
+    background-size: 100% 100%; 
+    position: fixed;
+    background-image: url(./icon/9.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+}
+.nav{
+    margin: 0;
+    padding: 2px;
+    /*background-image:linear-gradient(to right,rgb(27, 20, 49),rgb(70, 52, 123));*/
+    
+    filter: opacity(92%);
+    font-size: 14px;
+    overflow: hidden;
+    position: top;
+    backdrop-filter: blur(100px);
+}
+.nav a{
+    color:white;
+    text-decoration: none;
+    padding-right:8px;
+    padding-left: 8px;
+   cursor:default;
+    padding-top: 6px;
+}
+.nav a:active{
+    background-color: rgb(83, 72, 117) ;
+}
+
+.right{
+    float: right;
+    display: flex;
+    padding: 0px 3px;
+    flex-wrap: wrap;
+}
+.left{
+    float: left;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+ 
+.controlcentre{
+    height: 20px;
+    width: 25px;
+}
+.siri{
+     height: 17px;
+    width: 17px;
+}
+
+
+
+.dropdown-content-Apple{
+    display: flex;
+    flex-direction: column;
+  justify-items: start; 
+  align-items: start; 
+  color: white;
+  width: 180px;
+  padding: 5px;
+  font-size: 13px;
+  font-weight:600;
+  position: fixed;
+  isolation: isolate;
+  margin-left: 5px;
+  margin-top: 5px;
+  backdrop-filter: blur(100px);
+}
+.dropdown-content-Apple ::before{
+    content: ' ';
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    border: 0.1px rgb(112, 110, 130) solid;
+  border-radius: 0.5rem;
+}
+
+.dropdown-content-Apple a{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: start;
+    align-items: flex-start;
+    color: white;
+}
+
+.dropdown-content-Finder{
+  display: flex;
+    flex-direction: column;
+  justify-items: start; 
+  align-items: start; 
+  color: white;
+  width: 180px;
+  padding: 5px;
+  font-size: 13px;
+  font-weight:600;
+  position: fixed;
+  isolation: isolate;
+  margin-left: 36px;
+  margin-top: 5px;
+  backdrop-filter: blur(100px);
+  
+}
+
+.dropdown-content-Finder ::before{
+    content: ' ';
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    border: 0.1px rgb(112, 110, 130) solid;
+  border-radius: 0.5rem;
+}
+
+.dropdown-content-Finder a{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: start;
+    align-items: flex-start;
+    color: white;
+}
+
+.dropdown-content-File{
+    display: flex;
+    flex-direction: column;
+    justify-items: start; 
+    align-items: start; 
+    color: white;
+    width: 180px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight:600;
+    position: fixed;
+    isolation: isolate;
+    margin-left: 96px;
+    margin-top: 5px;
+    backdrop-filter: blur(100px);
+    
+  }
+  
+.dropdown-content-File ::before{
+      content: ' ';
+      inset: 0;
+      position: absolute;
+      z-index: -1;
+      border: 0.1px rgb(112, 110, 130) solid;
+    border-radius: 0.5rem;
+  }
+  
+.dropdown-content-File a{
+      display: flex;
+    flex-direction: column;
+      padding: 5px;
+      justify-content: start;
+      align-items: flex-start;
+      color: white;
+  }
+.DropEdit{
+    display: flex;
+    flex-direction: column;
+    justify-items: start; 
+    align-items: start; 
+    color: white;
+    width: 180px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight:600;
+    position: fixed;
+    isolation: isolate;
+    margin-left: 129px;
+    margin-top: 5px;
+    backdrop-filter: blur(100px);
+  
+}
+.DropEdit::before{
+    content: ' ';
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    border: 0.1px rgb(112, 110, 130) solid;
+  border-radius: 0.5rem;
+
+}
+.DropEdit a{
+    display: flex;
+    flex-direction: column;
+      padding: 5px;
+      justify-content: start;
+      align-items: flex-start;
+      color: white;
+}
+.DropView{
+    display: flex;
+    flex-direction: column;
+    justify-items: start; 
+    align-items: start; 
+    color: white;
+    width: 180px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight:600;
+    position: fixed;
+    isolation: isolate;
+    margin-left: 176px;
+    margin-top: 5px;
+    backdrop-filter: blur(100px);
+  
+}
+.DropView::before{
+    content: ' ';
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    border: 0.1px rgb(112, 110, 130) solid;
+  border-radius: 0.5rem;
+}
+.DropView a{
+    display: flex;
+    flex-direction: column;
+      padding: 5px;
+      justify-content: start;
+      align-items: flex-start;
+      color: white;
+}
+.DropGo{
+    display: flex;
+    flex-direction: column;
+    justify-items: start; 
+    align-items: start; 
+    color: white;
+    width: 180px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight:600;
+    position: fixed;
+    isolation: isolate;
+    margin-left: 219px;
+    margin-top: 5px;
+    backdrop-filter: blur(100px);
+  
+}
+.DropGo::before{
+    content: ' ';
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    border: 0.1px rgb(112, 110, 130) solid;
+  border-radius: 0.5rem;
+}
+.DropGo a{
+    display: flex;
+    flex-direction: column;
+      padding: 5px;
+      justify-content: start;
+      align-items: flex-start;
+      color: white;
+}
+
+.DropWindow{
+    display: flex;
+    flex-direction: column;
+    justify-items: start; 
+    align-items: start; 
+    color: white;
+    width: 250px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight:600;
+    position: fixed;
+    isolation: isolate;
+    margin-left: 259px;
+    margin-top: 5px;
+    backdrop-filter: blur(100px);
+     
+}
+.DropWindow::before{
+    content: ' ';
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    border: 0.1px rgb(112, 110, 130) solid;
+  border-radius: 0.5rem;
+}
+.DropWindow a{
+    display: flex;
+    flex-direction: column;
+      padding: 5px;
+      justify-content: start;
+      align-items: flex-start;
+      color: white;
+      background: blur(255, 255, 255);
+}
+
+.DropHelp{
+    display: flex;
+    flex-direction: column;
+    justify-items: start; 
+    align-items: start; 
+    color: white;
+    width: 250px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight:600;
+    position: fixed;
+    isolation: isolate;
+    margin-left: 259px;
+    margin-top: 5px;
+    backdrop-filter: blur(100px);
+      
+}
+.DropHelp::before{
+    content: ' ';
+    inset: 0;
+    position: absolute;
+    color: white;
+    z-index: -1;
+    border: 0.1px rgb(112, 110, 130) solid;
+  border-radius: 0.5rem;
+}
+.DropHelp a{
+    display: flex;
+    flex-direction: column;
+      padding: 5px;
+      justify-content: start;
+      align-items: flex-start;
+      color: white;
+      background: blur(255, 255, 255);
+}
+.DropHelp input{
+    width: 250px;
+    background-color:  rgb(45, 41, 94);
+    border: 0.1px rgb(112, 110, 130) solid;
+    opacity: 0.7;
+    backdrop-filter: blur(100px);
+    border-radius: 0.3rem;
+    padding: 5px;
+    color: white;
+}
+
+.dropbattery{
+    display: flex;
+    flex-direction: column;
+    justify-items: start; 
+    align-items: start; 
+    color: white;
+    width: 180px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight:600;
+    position: fixed;
+    isolation: isolate;
+    margin-left: 1140px;
+    margin-top: 5px;
+    backdrop-filter: blur(100px);
+    border: 0.1px rgb(112, 110, 130) solid;
+    border-radius: 0.5rem;
+}
+.dropbattery::before{
+    content: ' ';
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    border: 0.1px rgb(112, 110, 130) solid;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(100px); 
+  background-color: black;
+  opacity: 0.3;
+}
+.dropbattery p{
+    display: flex;
+    flex-direction: column;
+      padding: 5px;
+      justify-content: start;
+      align-items: flex-start;
+      color: white;
+      font-size: 10px;
+      border-bottom: 0.1px solid  rgb(112, 110, 130) ;
+      width: 170px;
+}
+.dropbattery a{
+    display: flex;
+    flex-direction: column;
+      padding: 5px;
+      justify-content: start;
+      align-items: flex-start;
+      color: white;
+      
+}
+.bbl{
+    border-bottom: 0.1px solid  rgb(112, 110, 130) ;
+    width: 170px;
+}
+
+.bb{
+    display:flex;
+    gap: 72px;
+    font-size: 16px;
+}
+.bbc{
+    display:flex;
+    gap: 102px;
+    font-size: 16px;
+}
+
+.DropWifi{
+    display: flex;
+    flex-direction: column;
+    justify-items: start; 
+    align-items: start; 
+    color: white;
+    width: 180px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight:600;
+    position: fixed;
+    isolation: isolate;
+    margin-left: 1100px;
+    margin-top: 5px;
+    backdrop-filter: blur(100px);
+    border: 0.1px rgb(112, 110, 130) solid;
+    
+}
+.DropWifi::before{
+    content: ' ';
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    border: 0.1px rgb(112, 110, 130) solid;
+  border-radius: 0.5rem;
+  border-radius: 0.5rem;background-color: black;
+    opacity: 0.25;
+}
+.DropWifi a{
+    display: flex;
+    flex-direction: column;
+      padding: 0px;
+      justify-content: start;
+      align-items: flex-start;
+      color: white;
+      padding-top: 5px;
+}
+
+.dropSearch {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 550px;
+    height: 50px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    position: fixed;
+    isolation: isolate;
+    margin-left: 350px;
+    margin-top: 200px;
+    backdrop-filter: blur(100px);
+    background: transparent;
+  }
+  
+  .dropSearch::before {
+    content: ' ';
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    border: 0.1px rgb(144, 141, 168) solid;
+    border-radius: 0.5rem;
+  }
+  
+  .dropSearch a {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-right: 10px; 
+    margin-left: 5px;
+    font-size: 25px;
+    color: rgb(144, 141, 168);
+    font-weight: lighter;
+  }
+
+  .dropSearch input {
+    width: 100%; 
+    height: 50px;
+    background: transparent;
+    font-size: 30px;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(100px);
+    color: white;
+    border: 0px solid;
+  }
+  
+  
+
+  
+  
+.ATM{
+    border-bottom: 0.1px solid  rgb(112, 110, 130) ;
+    width: 170px;
+}
+.ATML{
+    border-bottom: 0.1px solid  rgb(112, 110, 130) ;
+    width: 240px;
+}
+.wifiatm{
+    border-bottom: 0.1px solid  rgb(112, 110, 130) ;
+    width: 170px;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+.color a{
+    display:inline-flex
+}
+a.red{
+    color: red;
+}
+a.orange{
+    color: orange;
+}
+a.yellow{
+    color: yellow;
+}
+a.green{
+    color: green;
+}
+a.blue{
+    color: blue;
+}
+a.purple{
+    color:blueviolet;
+}
+a.grey{
+    color: rgb(93, 93, 93);
+}
+.show{
+    filter: opacity(0.4);
+}
+.showatm{
+    border-bottom: 0.1px solid  rgb(171, 169, 190);
+    width: 170px;
+    filter: opacity(0.4);
+}
+.showatml{
+    border-bottom: 0.1px solid  rgb(171, 169, 190);
+    width: 240px;
+    filter: opacity(0.4);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border:0.1px solid  rgb(112, 110, 130) ;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    cursor: default;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(191, 0, 234);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+
+.op{
+  opacity: 1;
+  animation: fadeIn 0.3s linear;
+}
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+}
+.cl{
+  opacity: 0;
+  animation: fadeOut 0.2s linear;
+}
+@keyframes fadeOut {
+  from{
+    opacity: 1;
+  }
+}
+.dock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ text-align: center;
+ padding: 3px;
+ position: fixed;
+ isolation: isolate;
+ width: 520px;
+ margin: 0 auto; 
+ bottom: 10px;
+ left: 0;
+ right: 0;
+ z-index: 1;
+
+}
+
+
+   
+.dock ::after{
+  content: ' ';
+  background-color: rgb(58, 57, 57);
+  border-radius: 0.6rem;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  filter: blur(100%);
+  opacity: 15%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.apps a {
+  flex: 1;
+}
+.apps img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.apps a:hover img {
+  transform: translateY(-20px) scale(1.7);
+}
+.dock a{
+  word-spacing: 1px;
+  padding:  5px;
+  margin: 1px;
+}
+.store{
+  height: 33px;
+  width: 33px;
+  padding: 2px;
+}
+.sett{
+  height: 35px;
+  width: 35px;
+  padding: 2px;
+  padding-right: 10px;
+  border-right:1px white solid ;
+}
+.facetime{
+  height: 35px;
+  width: 35px;
+  padding: 2px;
+}
+.contact{
+  height: 35px;
+  width: 35px;
+  padding: 2px;
+}
+.imsg{
+  height: 35px;
+  width: 35px;
+  padding: 2px;
+}
+.applemusic{
+  height: 35px;
+  width: 35px;
+  padding: 2px;
+}
+.pinterest{
+  height: 35px;
+  width: 35px;
+  padding: 2px;
+  border-radius: 0.7rem;
+}
+.launchpa{
+  background-color: rgb(174, 174, 174);
+  height: 35px;
+  width: 35px;
+  padding: 2px;
+  border-radius: 0.4rem;
+}
+.finder{
+  height: 35px;
+  width: 35px;
+  padding: 2px;
+  border-radius: 0.4rem;
+}
+.bin{
+  height: 35px;
+  width: 35px;
+  padding: 2px 5px 2px 5px;
+  margin-left: 5px;
+}
+

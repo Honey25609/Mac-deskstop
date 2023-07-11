@@ -1,0 +1,29 @@
+
+.sign{
+    position: fixed;
+    top: 28%;
+    left: 44%;
+}
+h2{
+    color: white;
+    font-weight: bolder;
+    margin-top: 50px;
+    text-shadow: 2px 2px 2px  black;
+}
+.pic{
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+}
+button{
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-left: 8px;
+    padding: 5px 20px;
+    color: white;
+    background: transparent;
+    filter: blur(1.2);
+    border: 3px rgb(255, 255, 255) solid;
+    border-radius: 0.75rem;
+}
