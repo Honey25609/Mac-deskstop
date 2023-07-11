@@ -520,45 +520,85 @@ const launch = () => {
       {dropdownControlCentre && (
         <Controlcentre/>
       )}
-   <div className="dock" style={{ width: 400 }}>
+  
 
 
-   <motion.div whileHover={{ scale: 1.2 }} className="dock">
-  <motion.div whileHover={{ scale: 1.5,translateY:-10 }}>
-    <motion.img src={finder} className="icon" />
-  </motion.div>
-  <motion.div whileHover={{ scale: 1.5,translateY:-10 }}>
-    <motion.img src={launchpad} className="icon" onClick={launch} />
-  </motion.div>
-  <motion.div whileHover={{ scale: 1.5,translateY:-10 }}>
-    <motion.img src={facetime} className="icon" />
-  </motion.div>
-  <motion.div whileHover={{ scale: 1.5,translateY:-10 }}>
-    <motion.img src={contact} className="icon" />
-  </motion.div>
-  <motion.div whileHover={{ scale: 1.5,translateY:-10 }}>
-    <motion.img src={imsg} className="icon" />
-  </motion.div>
-  <motion.div whileHover={{ scale: 1.5,translateY:-10 }}>
-    <motion.img src={pinterest} className="icon" />
-  </motion.div>
-  <motion.div whileHover={{ scale: 1.5,translateY:-10 }}>
-    <motion.img src={applemusic} className="icon" />
-  </motion.div>
-  <motion.div whileHover={{ scale: 1.5,translateY:-10 }}>
-    <motion.img src={applestore} className="icon" />
-  </motion.div>
-  <motion.div whileHover={{ scale: 1.5,translateY:-10 }}>
-    <motion.img src={setting} className="icon" />
-  </motion.div>
-  <motion.div whileHover={{ scale: 1.5,translateY:-10 }}>
-    <motion.img src={bin} className="icon" />
-  </motion.div>
-</motion.div>
+   <div whileHover={{ scale: 1.2 }} className="dock">
+   <a><motion.img
+        whileHover={{ scale: 1.5,translateY:-10,translateY:-10 }}
+        src={finder}
+        className="finder"
+      /></a>
+      <a>
+      <motion.img
+        whileHover={{ scale: 1.5,translateY:-10 }}
+        src={launchpad}
+        className="launchpa"
+        onClick={launch}
+      />
+      </a>
+      <a>
+      <motion.img
+        whileHover={{ scale: 1.5,translateY:-10 }}
+        src={facetime}
+        className="facetime"
+      />
+      </a>
+      <a>
+      <motion.img
+        whileHover={{ scale: 1.5,translateY:-10 }}
+        src={contact}
+        className="contact"
+      />
+      </a>
+       <a>
+       <motion.img
+        whileHover={{ scale: 1.5,translateY:-10 }}
+        src={imsg}
+        className="imsg"
+      />
+       </a>
+       <a>
+       <motion.img
+        whileHover={{ scale: 1.5,translateY:-10 }}
+        src={pinterest}
+        className="pinterest"
+      />
+       </a>
+       <a>
+       <motion.img
+        whileHover={{ scale: 1.5,translateY:-10 }}
+        src={applemusic}
+        className="applemusic"
+      />
+       </a>
+      <a>
+      <motion.img
+        whileHover={{ scale: 1.5,translateY:-10 }}
+        src={applestore}
+        className="store"
+      />
+      </a>
+       <a>
+       <motion.img
+        whileHover={{ scale: 1.5,translateY:-10 }}
+        src={setting}
+        className="sett"
+      />
+       </a>
+       <a>
+       <motion.img
+        whileHover={{ scale: 1.5,translateY:-10 }}
+        src={bin}
+        className="bin"
+      />
+       </a>
+  </div>
 
 
 
-</div>
+
+
 
 
         
