@@ -1,3 +1,15 @@
+
+Sure, here is a README.md for your first React project, which is a MacBook desktop clone for the frontend only:
+
+MacBook Desktop Clone (Frontend)
+This is a React project that clones the look and feel of a MacBook desktop. It only includes the frontend code, and does not include any backend functionality.
+
+
+DEMO- https://mac-deskstop-lqze-ridw7gwuv-honey25609.vercel.app/
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
