@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-
+import Dock from "react-osx-dock";
 import "./navbar.css";
 import controlcentre from './icon/control-center.png'
 import siri from './icon/siri.png'
@@ -520,7 +520,17 @@ const launch = () => {
       {dropdownControlCentre && (
         <Controlcentre/>
       )}
-     
+         <Dock className="dock" width={400} magnification={1} magnifyDirection="up">
+  {[finder, launchpad, facetime, applemusic, imsg, pinterest, contact, setting, applestore, bin].map((item, index) => (
+    <Dock.Item className="d" key={index} >
+      {item === launchpad ? (
+        <motion.img onClick={launch}  whileHover={{ scale: 1.5 }}  src={item} alt={item} className="icon" />
+      ) : (
+        <motion.img  whileHover={{ scale: 1.5 }} src={item} alt={item} className="icon" />
+      )}
+    </Dock.Item>
+  ))}
+</Dock>
    {isLaunchpadVisible && <Launchpad className="launchpad"/>}
  </body>
   
