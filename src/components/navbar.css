@@ -87,6 +87,7 @@ body{
     justify-content: start;
     align-items: flex-start;
     color: white;
+    width: 170px;
 }
 
 .dropdown-content-Finder{
@@ -123,6 +124,7 @@ body{
     justify-content: start;
     align-items: flex-start;
     color: white;
+    width: 170px;
 }
 
 .dropdown-content-File{
@@ -159,6 +161,7 @@ body{
       justify-content: start;
       align-items: flex-start;
       color: white;
+      width: 170px;
   }
 .DropEdit{
     display: flex;
@@ -175,6 +178,7 @@ body{
     margin-left: 129px;
     margin-top: 5px;
     backdrop-filter: blur(100px);
+    
   
 }
 .DropEdit::before{
@@ -193,6 +197,7 @@ body{
       justify-content: start;
       align-items: flex-start;
       color: white;
+      width: 170px;
 }
 .DropView{
     display: flex;
@@ -226,6 +231,7 @@ body{
       justify-content: start;
       align-items: flex-start;
       color: white;
+      width: 170px;
 }
 .DropGo{
     display: flex;
@@ -259,6 +265,7 @@ body{
       justify-content: start;
       align-items: flex-start;
       color: white;
+      width: 170px;
 }
 
 .DropWindow{
@@ -294,6 +301,7 @@ body{
       align-items: flex-start;
       color: white;
       background: blur(255, 255, 255);
+      width: 250px;
 }
 
 .DropHelp{
@@ -330,6 +338,7 @@ body{
       align-items: flex-start;
       color: white;
       background: blur(255, 255, 255);
+      width: 250px;
 }
 .DropHelp input{
     width: 250px;
@@ -729,4 +738,54 @@ a.grey{
   padding: 2px 5px 2px 5px;
   margin-left: 5px;
 }
+.dropdown-content-Apple a:hover,
+.dropdown-content-Finder a:hover,
+.dropdown-content-File a:hover,
+.DropEdit a:hover,
+.DropGo a:hover,
+.DropView a:hover,
+.dropdown a:hover{
+  width: 170px;
+  background-color: rgb(149, 56, 178);
+  border-radius: 0.3rem;
+}
+.DropHelp a:hover,
+.DropWindow a:hover{
+  width: 240px;
+  background-color: rgb(149, 56, 178);
+  border-radius: 0.3rem;
+}
+.dropdown{
+  display: flex;
+  flex-direction: column;
+justify-items: start; 
+align-items: start; 
+color: white;
+width: 180px;
+padding: 5px;
+font-size: 13px;
+font-weight:600;
+position: fixed;
+isolation: isolate;
 
+backdrop-filter: blur(100px);
+}
+.dropdown ::before{
+  content: ' ';
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  border: 0.1px rgb(112, 110, 130) solid;
+border-radius: 0.5rem;
+
+}
+
+.dropdown a{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: start;
+  align-items: flex-start;
+  color: white;
+  width: 170px;
+}

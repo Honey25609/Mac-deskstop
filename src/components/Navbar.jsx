@@ -309,6 +309,19 @@ const launch = () => {
   if(isLaunchpadVisible==true) {
     setIsLaunchpadVisible(false)
     setName('out')
+    setDropdownFinder(false);
+    setDropdownApple(false);
+    setDropdownFile(false);
+    setDropdownEdit(false);
+    setDropdownView(false);
+    setDropdownGo(false);
+    setDropdownWindow(false);
+    setDropdownHelp(false);
+    setIsDropdownOpen(false);
+    setDropdownWifi(false);
+    setDropdownSearch(false);
+    setDropdownControlCentre(false);
+    setShowDropdown(false);
   }
   else if(isLaunchpadVisible==false){
     setIsLaunchpadVisible(true)
@@ -317,15 +330,69 @@ const launch = () => {
 
 };
 
+const [showDropdown, setShowDropdown] = useState(false);
+  const [dropdownPosition, setDropdownPosition] = useState({ x: 0, y: 0 });
 
+  const handleContextMenu = (e) => {
+    e.preventDefault();
+    setShowDropdown(true);
+    setDropdownPosition({ x: e.clientX, y: e.clientY });
+    setDropdownFinder(false);
+    setDropdownApple(false);
+    setDropdownFile(false);
+    setDropdownEdit(false);
+    setDropdownView(false);
+    setDropdownGo(false);
+    setDropdownWindow(false);
+    setDropdownHelp(false);
+    setIsDropdownOpen(false);
+    setDropdownWifi(false);
+    setDropdownSearch(false);
+    setDropdownControlCentre(false);
+  };
+
+  const handleOptionClick = (option) => {
+
+    console.log(`Clicked option: ${option}`);
+    setShowDropdown(false);
+  };
+
+  const handleOutsideClick = () => {
+    setShowDropdown(false);
+  };
   
     
   
   return (
     
      
- <body>
-  
+ <body onContextMenu={handleContextMenu} onClick={handleOutsideClick}>
+   {showDropdown && (
+        <div
+          className="dropdown"
+          style={{ position: 'fixed', top: dropdownPosition.y, left: dropdownPosition.x }}
+        >
+          <div className="option" onClick={() => handleOptionClick('Option 1')}>
+            <a className='ATM'>New Folder</a>
+          </div>
+          <div className="option" onClick={() => handleOptionClick('Option 2')}>
+            <a>Get Info</a>
+          </div>
+          <div className="option" onClick={() => handleOptionClick('Option 3')}>
+            <a className='ATM'>change Wallpaper</a>
+          </div>
+          <div className="option" onClick={() => handleOptionClick('Option 4')}>
+            <a>Group Stack By</a>
+          </div>
+          <div className="option" onClick={() => handleOptionClick('Option 5')}>
+            <a className='ATM'>Show View Opions</a>
+          </div>
+          <div className="option" onClick={() => handleOptionClick('Option 5')}>
+            <a>Import from iPhone or iPad</a>
+          </div>
+        </div>
+      )}
+
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
  <link rel='stylesheet' href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
  
