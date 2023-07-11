@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import "./navbar.css";
+import './Dock.css';
 import controlcentre from './icon/control-center.png'
 import siri from './icon/siri.png'
 import Clock from './Clock';
@@ -17,7 +18,7 @@ import bin from './icon/bin.png'
 import Launchpad from './Launchpad';
 import './Launchpad.css'
 import { motion } from 'framer-motion';
-import './Dock.css';
+
 
 
 
