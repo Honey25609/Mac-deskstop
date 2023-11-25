@@ -67,7 +67,7 @@ body{
   font-weight:600;
   position: fixed;
   isolation: isolate;
-  margin-left: 5px;
+  margin-left: 0.5vw;
   margin-top: 5px;
   backdrop-filter: blur(100px);
 }
@@ -102,7 +102,7 @@ body{
   font-weight:600;
   position: fixed;
   isolation: isolate;
-  margin-left: 36px;
+  margin-left: 2vw;
   margin-top: 5px;
   backdrop-filter: blur(100px);
   
@@ -139,7 +139,7 @@ body{
     font-weight:600;
     position: fixed;
     isolation: isolate;
-    margin-left: 96px;
+    margin-left: 6.2vw;
     margin-top: 5px;
     backdrop-filter: blur(100px);
     
@@ -175,7 +175,7 @@ body{
     font-weight:600;
     position: fixed;
     isolation: isolate;
-    margin-left: 129px;
+    margin-left: 9.1vw;
     margin-top: 5px;
     backdrop-filter: blur(100px);
     
@@ -211,7 +211,7 @@ body{
     font-weight:600;
     position: fixed;
     isolation: isolate;
-    margin-left: 176px;
+    margin-left: 11.7vw;
     margin-top: 5px;
     backdrop-filter: blur(100px);
   
@@ -245,7 +245,7 @@ body{
     font-weight:600;
     position: fixed;
     isolation: isolate;
-    margin-left: 219px;
+    margin-left: 15vw;
     margin-top: 5px;
     backdrop-filter: blur(100px);
   
@@ -280,7 +280,7 @@ body{
     font-weight:600;
     position: fixed;
     isolation: isolate;
-    margin-left: 259px;
+    margin-left: 17.4vw;
     margin-top: 5px;
     backdrop-filter: blur(100px);
      
@@ -316,7 +316,7 @@ body{
     font-weight:600;
     position: fixed;
     isolation: isolate;
-    margin-left: 259px;
+    margin-left: 22vw;
     margin-top: 5px;
     backdrop-filter: blur(100px);
       
@@ -363,7 +363,7 @@ body{
     font-weight:600;
     position: fixed;
     isolation: isolate;
-    margin-left: 1140px;
+    margin-left: 68vw;
     margin-top: 5px;
     backdrop-filter: blur(100px);
     border: 0.1px rgb(112, 110, 130) solid;
@@ -428,7 +428,7 @@ body{
     font-weight:600;
     position: fixed;
     isolation: isolate;
-    margin-left: 1100px;
+    margin-left: 70vw;
     margin-top: 5px;
     backdrop-filter: blur(100px);
     border: 0.1px rgb(112, 110, 130) solid;
